@@ -53,7 +53,7 @@ It consists of four subfolders.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:clipboard: [CategoryManager](https://github.com/cihanicelliler/Vetima-Backend/blob/master/Business/Concrete/CategoryManager.cs)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:clipboard: [ProductImagesManager](https://github.com/cihanicelliler/Vetima-Backend/blob/master/Business/Concrete/ProductImagesManager.cs)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:clipboard: [ProductManager](https://github.com/cihanicelliler/Vetima-Backend/blob/master/Business/Concrete/ProductManager.cs)<br>
-nbsp;&nbsp;&nbsp;&nbsp;:open_file_folder:`Constants`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;:open_file_folder:`Constants`<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:clipboard: [Messages](https://github.com/cihanicelliler/Vetima-Backend/blob/master/Business/Constants/Messages.cs)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;:open_file_folder:`DependecyResolvers`<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:open_file_folder: `Autofac`<br>
