@@ -47,6 +47,18 @@ namespace Business.Concrete
         {
             return new SuccessDataResult<List<ProductDetailDto>>(_productDal.GetProductDetailDtos(), Messages.ProductsDetailed);
         }
+
+        [CacheAspect]
+        public IDataResult<List<ProductDetailDto>> GetProductDetailsByCategoryId(int categoryId)
+        {
+            return new SuccessDataResult<List<ProductDetailDto>>(_productDal.GetProductDetailDtosByCategoryId(categoryId), Messages.ProductsDetailed);
+        }
+        [CacheAspect]
+        public IDataResult<List<ProductDetailDto>> GetProductDetailsById(int id)
+        {
+            return new SuccessDataResult<List<ProductDetailDto>>(_productDal.GetProductDetailDtosById(id), Messages.ProductsDetailed);
+        }
+
         [CacheAspect]
         public IDataResult<List<Product>> GetProductsByCategoryId(int id)
         {

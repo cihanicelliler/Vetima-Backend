@@ -24,7 +24,7 @@ namespace Business.Concrete
 
         public IResult Add(IFormFile file, ProductImages productImages)
         {
-            productImages.ImagePath = FileHelper.Add(file);
+            productImages.ImagePath_1 = FileHelper.Add(file);
             productImages.Date = DateTime.Now;
             _productImagesDal.Add(productImages);
             return new SuccessResult();
@@ -58,7 +58,7 @@ namespace Business.Concrete
 
         public IResult Update(IFormFile file, ProductImages productImages)
         {
-            productImages.ImagePath = FileHelper.Update(_productImagesDal.Get(p => p.Id == productImages.Id).ImagePath, file);
+            productImages.ImagePath_1 = FileHelper.Update(_productImagesDal.Get(p => p.Id == productImages.Id).ImagePath_1, file);
             productImages.Date = DateTime.Now;
             _productImagesDal.Update(productImages);
             return new SuccessResult();
@@ -68,7 +68,7 @@ namespace Business.Concrete
         {
             try
             {
-                File.Delete(productImages.ImagePath);
+                File.Delete(productImages.ImagePath_1);
             }
             catch (Exception exception)
             {

@@ -9,8 +9,11 @@ namespace Entities.Concrete
     {
         public int Id { get; set; }
         public string ProductName { get; set; }
+        public string ProductName_EN { get; set; }
         public int CategoryId { get; set; }
         public string DescriptionProduct { get; set; }
         public string DescriptionProduct2 { get; set; }
+        public string DescriptionProduct_EN { get; set; }
+        public string DescriptionProduct2_EN { get; set; }
     }
 }

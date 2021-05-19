@@ -39,10 +39,20 @@ namespace WebAPI.Controllers
             }
             return BadRequest();
         }
-        [HttpGet("productsbyid")]
-        public IActionResult GetProductsByCategoryId(int id)
+        [HttpGet("productsbycategoryid")]
+        public IActionResult GetProductsByCategoryId(int categoryId)
         {
-            var result = _productService.GetProductsByCategoryId(id);
+            var result = _productService.GetProductDetailsByCategoryId(categoryId);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
+        [HttpGet("productsbyid")]
+        public IActionResult GetProductsById(int id)
+        {
+            var result = _productService.GetProductDetailsById(id);
             if (result.Success)
             {
                 return Ok(result);

@@ -24,7 +24,7 @@ namespace Core.Utilities.FileHelper
 
             var imgPath = result;
 
-            imgPath = imgPath.Replace("C:\\Users\\icell\\source\\repos\\ReCapProject\\WebAPI\\wwwroot\\uploads\\", "");
+            imgPath = imgPath.Replace("C:\\Users\\icell\\source\\repos\\Website\\WebAPI\\wwwroot\\uploads\\", "");
 
             return imgPath;
         }
